@@ -31,5 +31,17 @@ switch (num){
 
 System.Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-string result = (num < 8 && (num == 6 || num == 7))? "Да" : "Число не соответствует какому-либо дню недели";
-System.Console.WriteLine(result);
+if ((num < 8) && (0 < num))
+{
+    if ((num == 6) || (num == 7))
+    {
+        Console.WriteLine("Да");
+    }
+    else {
+        Console.WriteLine("Нет");
+    }
+}
+else {
+        Console.WriteLine("Число не соответствует какому-либо дню");
+    }
+
